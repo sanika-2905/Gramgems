@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GramGenius</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>✨ GramGenius ✨</h2>
+</div>
+
+<div class="main">
+    <h1>Elevate your <span>Instagram</span> post.</h1>
+    <p>Upload a stunning photo and let AI craft the perfect caption.</p>
+
+    <div class="card-container">
+
+        <div class="card upload-card">
+            <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+                <p>📤 Upload your photo</p>
+                <small>Drag & drop or click</small>
+                <input type="file" id="fileInput" hidden>
+            </div>
+
+            <input type="text" id="hashtags" placeholder="#custom #tags (optional)">
+            <input type="text" id="url" placeholder="https://your-link.com (optional)">
+
+            <button onclick="generateCaption()">Generate Caption 🚀</button>
+        </div>
+
+        <div class="card preview-card">
+            <div id="previewArea">
+                <p id="noImageText">No image selected</p>
+                <img id="preview" src="" alt="Image preview" style="display:none; max-width:100%; border-radius:10px; margin-bottom:10px;">
+            </div>
+
+            <div id="result">
+                <h3 id="caption"></h3>
+                <p id="tags"></p>
+                <p id="link"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

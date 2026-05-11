@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #1a0026, #000);
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 15px;
+    color: #ff4ecd;
+}
+
+.main {
+    text-align: center;
+    padding: 30px;
+}
+
+.main h1 {
+    font-size: 40px;
+}
+
+.main span {
+    color: #ff4ecd;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(255,0,255,0.2);
+}
+
+.upload-box {
+    border: 2px dashed #888;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.upload-box:hover {
+    border-color: #ff4ecd;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff4ecd, #7a5cff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.preview-card {
+    text-align: center;
+}
+
+#previewArea img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#result {
+    margin-top: 10px;
+}
