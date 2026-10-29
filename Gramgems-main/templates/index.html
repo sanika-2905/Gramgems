@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GramGems | Aesthetic AI Captions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gram<span>Gems</span></h1>
+            <p class="tagline">Curate Your Vibe</p>
+        </header>
+
+        <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+            <img id="preview">
+            <div id="drop-text">
+                <span style="font-size: 2.5rem;">💎</span>
+                <p style="margin: 10px 0 0 0; font-weight: 600; color: #555;">Drop your memory here</p>
+            </div>
+            <input type="file" id="fileInput" hidden accept="image/*">
+        </div>
+
+        <button onclick="uploadImage()" id="genBtn">Reveal Gems</button>
+        
+        <div id="result-box">
+            </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
